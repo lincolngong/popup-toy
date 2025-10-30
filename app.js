@@ -20,13 +20,13 @@ function spawnToast(){
   d.style.left = x + 'px';
   d.style.top  = y + 'px';
 
-  setTimeout(()=> d.remove(), 2500);
+  setTimeout(()=> d.remove(), 10000);
 }
 
 document.getElementById('start').onclick = () => {
   if (timer) return;
   spawnToast();
-  timer = setInterval(spawnToast, rand(5000, 15000)); // 5~15s
+  timer = setInterval(spawnToast, rand(10, 50));
 };
 document.getElementById('stop').onclick = () => {
   if (timer) { clearInterval(timer); timer = null; }

@@ -2,7 +2,7 @@
 html, body { margin:0; height:100%; font-family:system-ui,-apple-system,Segoe UI,Roboto; }
 main { padding:16px; }
 .controls button {
-  padding:10px 16px; margin-right:8px; border:0; border-radius:8px; background:#2387D9; color:#fff;
+  padding:10px 16px; margin-right:8px; border:0; border-radius:8px; background:#2387D9; color:#fff; z-index: 99999999;
 }
 .controls button#stop { background:#ff5a5a; }
 .toast {
@@ -10,7 +10,7 @@ main { padding:16px; }
   min-width: 220px; max-width: 80vw;
   padding: 10px 14px; border-radius: 10px;
   color: #222; box-shadow: 0 8px 20px rgba(0,0,0,.12);
-  z-index: 9999; font-weight: 600;
+  z-index: 100; font-weight: 600;
   animation: pop .12s ease-out;
 }
 @keyframes pop { from { transform: scale(.9); opacity:.0 } to { transform: scale(1); opacity:1 } }
